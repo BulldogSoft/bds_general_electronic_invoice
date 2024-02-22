@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+
+    <template id="instagram_feed_view_modal" inherit_id="portal.frontend_layout">
+        <xpath expr="//div[@id='wrapwrap']" position="inside">
+            <div role="dialog" class="modal" id="insta_feed_view_modal" tabindex="-1" data-backdrop="static" style="z-index:9999;">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content ecom-zoomable zoomodoo-next" style="position:relative;">
+                        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"/></button>
+                        <div class="data_loader cp-spinner cp-boxes"></div>
+                        <div class="modal-body">
+                            <div class="row item">
+                                <div class="col-lg-6 col-sm-12 item">
+                                    <div class="d-flex align-items-center justify-content-center h-100">
+                                        <img class="insta-image img img-fluid mh-100"/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 info item">
+                                    <div class="d-flex align-items-center justify-content-center flex-wrap h-100">
+                                        <div class="row insta-feed-info">
+                                            <a class="insta-link" href="#" target="_blank">
+                                                <h1 class="username mb-1"></h1>
+                                            </a>
+                                            <a class="insta-link" href="#" target="_blank">
+                                                <p class="font-weight-bold mb-1">Siguenos en Instagram</p>
+                                            </a>
+                                            <blockquote class="blockquote mb0">
+                                                <p class="mb0 caption"></p>
+                                            </blockquote>
+                                            <a class="btn btn-success btn-lg view-on-insta mt-1 mb-1" href="#" target="_blank">View on Instagram</a>
+                                            <p class="text-danger">Updated On : <span class="updated_on"/></p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="get-in-touch">
+                                                <div>
+                                                    <h5 class="font-weight-bold">Get In Touch</h5>
+                                                    <ul class="list-unstyled mb0">
+                                                        <li class="mt4"><a href="/contactus">Contact us</a></li>
+                                                        <li class="mt4"><i class="fa fa-phone"/> <span class="o_force_ltr" t-field="res_company.phone"/></li>
+                                                        <li class="mt4"><i class="fa fa-envelope"/>  <span t-field="res_company.email"/></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="connect">
+                                                <div>
+                                                    <h5 class="font-weight-bold">You can also join us on</h5>
+                                                    <p class="mb0">
+                                                        <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link"><i class="fa fa-2x fa-facebook-square"/></a>
+                                                        <a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link"><i class="fa fa-2x fa-twitter"/></a>
+                                                        <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link"><i class="fa fa-2x fa-linkedin"/></a>
+                                                        <a t-if="website.social_youtube" t-att-href="website.social_youtube" class="btn btn-sm btn-link"><i class="fa fa-2x fa-youtube-play"/></a>
+                                                        <a t-if="website.social_github" t-att-href="website.social_github" class="btn btn-sm btn-link"><i class="fa fa-2x fa-github"/></a>
+                                                        <a t-if="website.social_instagram" t-att-href="website.social_instagram" class="btn btn-sm btn-link"><i class="fa fa-2x fa-instagram"/></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="wk_s_instagram_gallery" name="Gallery">
+        <section class="instagram_gallery">
+            <div class="instagram_feed o_not_editable "/>
+        </section>
+    </template>
+</odoo>

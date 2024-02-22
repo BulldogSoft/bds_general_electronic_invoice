@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+    <record id="website_insta_refresh_token_cron" model="ir.cron">
+        <field name="name">Refresh Token: Instagram Access Token</field>
+        <field name="model_id" ref="model_website"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_refresh_token()</field>
+        <field name="interval_number">50</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="active" eval="True"/>
+        <field name="doall" eval="False"/>
+    </record>
+</odoo>

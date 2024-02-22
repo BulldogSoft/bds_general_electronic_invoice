@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<templates id="template" xml:space="preserve">
+    <t t-name="Website.Instagram.Gallery">
+        <div class="container pt16 pb16" contenteditable="false">
+            <div class="row ">
+                <div class="col-12">
+                    <t t-if="data.social_instagram">
+                        <a t-att-href="data.social_instagram" target="_blank">
+                            <h2 class="text-center text-muted font-weight-bold" t-esc="data.msg"></h2>
+                        </a>
+                    </t>
+                    <t t-else="">
+                        <h2 class="text-center text-muted font-weight-bold" t-esc="data.msg"></h2>
+                    </t>
+                </div>
+            </div>
+            <div class="row owl-carousel owl-theme owl-loaded owl-drag" style='margin-left:0px'>
+                <t t-foreach="data.user_media.data" t-as="feed">
+                    <div class="wk-img-box item">
+                        <a t-att-href="feed.permalink" target="_blank">
+                            <img class="img img-fluid img-thumbnail" t-att-src="feed.media_url" t-if="feed.media_type != 'VIDEO'"/>
+                            <img class="img img-fluid img-thumbnail" t-att-src="feed.thumbnail_url" t-if="feed.media_type == 'VIDEO'"/>
+                        </a>
+                        <div class="img-info bg-black-50">
+                            <span class="caption" t-att-insta-caption="feed.caption"/>
+                            <span class="media_url" t-att-insta-media_url="feed.media_url" t-if="feed.media_type != 'VIDEO'"/>
+                            <span class="media_url" t-att-insta-media_url="feed.thumbnail_url" t-if="feed.media_type == 'VIDEO'"/>
+                            <span class="permalink" t-att-insta-permalink="feed.permalink"/>
+                            <span class="timestamp" t-att-insta-timestamp="feed.timestamp"/>
+                            <span class="username" t-att-insta-username="feed.username"/>
+                            <span class="btn instagram_feed_quick_view" title="Instagram Feed Quick View">
+                                <span class="fa fa-eye" role="img"/>
+                            </span>
+                        </div>
+                        <div class="wk_video_icon" t-if="feed.media_type == 'VIDEO'">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </t>
+
+            </div>
+        </div>
+    </t>
+    <t t-name="Website.Instagram.Error">
+        <div class="container" contenteditable="false">
+            <div class="alert alert-warning" role="alert">
+                <t t-esc="data.error"/>
+                <t t-if='!data.nodata'>
+                    <a class="" href="/web#action=website.action_website_configuration"><i class="fa fa-plus-circle"/> Instagram Configuration</a>
+                </t>
+            </div>
+        </div>
+    </t>
+    <t t-name="Website.Instagram.NoPost">
+        <div class="container" contenteditable="false">
+            <div class="alert alert-warning text-center" role="alert">
+                <t t-esc="data.no_post"/>
+            </div>
+        </div>
+    </t>
+</templates>

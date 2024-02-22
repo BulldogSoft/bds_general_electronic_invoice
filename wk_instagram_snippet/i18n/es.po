@@ -1,0 +1,226 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* wk_instagram_snippet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-17 08:49+0000\n"
+"PO-Revision-Date: 2024-02-21 22:06-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. module: wk_instagram_snippet
+#: code:addons/wk_instagram_snippet/models/res_config_settings.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"Please double-check your Instagram Basic Display API Access Token"
+msgstr ""
+
+#. module: wk_instagram_snippet
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.res_config_settings_view_form
+msgid ""
+"<i class=\"fa fa-arrow-right\"/>\n"
+"                                How to configure an app in the app dashboard"
+msgstr ""
+"<i class=\"fa fa-arrow-right\"/>\n"
+"                                ¿Como configurar la app en el dashboard?"
+
+#. module: wk_instagram_snippet
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.res_config_settings_view_form
+msgid ""
+"<i class=\"fa fa-arrow-right\"/>\n"
+"                                How to get my access tokens"
+msgstr ""
+"<i class=\"fa fa-arrow-right\"/>\n"
+"                                ¿Cómo obtener mi Token de acceso?"
+
+#. module: wk_instagram_snippet
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.res_config_settings_view_form
+#, fuzzy
+msgid ""
+"<span class=\"fa fa-lg fa-globe\" title=\"Values set here are website-"
+"specific.\" groups=\"website.group_multi_website\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-globe\" title=\"Los valores establecidos aquí son "
+"específicos del sitio web.\" groups=\"website.group_multi_website\"/>"
+
+#. module: wk_instagram_snippet
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_res_config_settings__insta_access_token
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_webkul_website_addons__insta_access_token
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_website__insta_access_token
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.res_config_settings_view_form
+#, fuzzy
+msgid "Access Token"
+msgstr "Token de Acceso"
+
+#. module: wk_instagram_snippet
+#: model:ir.model,name:wk_instagram_snippet.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: wk_instagram_snippet
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.instagram_feed_view_modal
+#, fuzzy
+msgid "Contact us"
+msgstr "Contáctenos"
+
+#. module: wk_instagram_snippet
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_res_config_settings__insta_post_count
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_webkul_website_addons__insta_post_count
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_website__insta_post_count
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.res_config_settings_view_form
+#, fuzzy
+msgid "Count"
+msgstr "Contar"
+
+#. module: wk_instagram_snippet
+#: code:addons/wk_instagram_snippet/models/res_config_settings.py:0
+#, python-format
+msgid "Count should not be less than 4"
+msgstr "El recuento no debe ser inferior a 4."
+
+#. module: wk_instagram_snippet
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_website__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: wk_instagram_snippet
+#: code:addons/wk_instagram_snippet/models/res_config_settings.py:0
+#, fuzzy, python-format
+msgid "Error : "
+msgstr "ERROR:"
+
+#. module: wk_instagram_snippet
+#: code:addons/wk_instagram_snippet/controllers/main.py:0
+#, python-format
+msgid "Follow Us On Instagram"
+msgstr "Siguenos en Instragram"
+
+#. module: wk_instagram_snippet
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.instagram_feed_view_modal
+msgid "Follow us on Instagram"
+msgstr "Siguenos en Instragram"
+
+#. module: wk_instagram_snippet
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.instagram_feed_view_modal
+#, fuzzy
+msgid "Get In Touch"
+msgstr "Póngase en contacto"
+
+#. module: wk_instagram_snippet
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_res_config_settings__id
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_website__id
+#, fuzzy
+msgid "ID"
+msgstr "ID"
+
+#. module: wk_instagram_snippet
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_res_config_settings__has_instagram
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_webkul_website_addons__has_instagram
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_website__has_instagram
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.snippets
+#, fuzzy
+msgid "Instagram"
+msgstr "Instagram"
+
+#. module: wk_instagram_snippet
+#. openerp-web
+#: code:addons/wk_instagram_snippet/static/src/xml/instagram.xml:0
+#, python-format
+msgid "Instagram Configuration"
+msgstr "Configuración de Instagram"
+
+#. module: wk_instagram_snippet
+#. openerp-web
+#: code:addons/wk_instagram_snippet/static/src/xml/instagram.xml:0
+#, python-format
+msgid "Instagram Feed Quick View"
+msgstr "Vista rápida del feed de Instagram"
+
+#. module: wk_instagram_snippet
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_website____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: wk_instagram_snippet
+#: code:addons/wk_instagram_snippet/models/res_config_settings.py:0
+#, python-format
+msgid "Please double-check your Instagram Basic Display API Access Token!"
+msgstr ""
+"¡Vuelva a verificar su token de acceso a la API de visualización básica de "
+"Instagram!"
+
+#. module: wk_instagram_snippet
+#: code:addons/wk_instagram_snippet/controllers/main.py:0
+#, python-format
+msgid "Please enable Instagram option in the Website Settings."
+msgstr "Habilite la opción de Instagram en la configuración del sitio web."
+
+#. module: wk_instagram_snippet
+#: model:ir.actions.server,name:wk_instagram_snippet.website_insta_refresh_token_cron_ir_actions_server
+#: model:ir.cron,cron_name:wk_instagram_snippet.website_insta_refresh_token_cron
+#: model:ir.cron,name:wk_instagram_snippet.website_insta_refresh_token_cron
+msgid "Refresh Token: Instagram Access Token"
+msgstr "Actualizar token: token de acceso a Instagram"
+
+#. module: wk_instagram_snippet
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.res_config_settings_view_form
+msgid "Show your instagram feed on your website"
+msgstr "Muestra tu feed de Instagram en tu sitio web"
+
+#. module: wk_instagram_snippet
+#: code:addons/wk_instagram_snippet/controllers/main.py:0
+#, python-format
+msgid "There is no post on Instagram account."
+msgstr "No hay publicaciones en la cuenta de Instagram."
+
+#. module: wk_instagram_snippet
+#: model:ir.model.fields,help:wk_instagram_snippet.field_res_config_settings__insta_post_count
+#: model:ir.model.fields,help:wk_instagram_snippet.field_webkul_website_addons__insta_post_count
+msgid ""
+"Total number of Instagram post that will be displayed in instagram snippets "
+"block."
+msgstr ""
+"Número total de publicaciones de Instagram que se mostrarán en el bloque de "
+"fragmentos de Instagram."
+
+#. module: wk_instagram_snippet
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.instagram_feed_view_modal
+msgid "Updated On : <span class=\"updated_on\"/>"
+msgstr "Actualizado el : <span class=\"updated_on\"/>"
+
+#. module: wk_instagram_snippet
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_res_config_settings__insta_user_id
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_webkul_website_addons__insta_user_id
+#: model:ir.model.fields,field_description:wk_instagram_snippet.field_website__insta_user_id
+#, fuzzy
+msgid "User ID"
+msgstr "ID de Usuario"
+
+#. module: wk_instagram_snippet
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.instagram_feed_view_modal
+#, fuzzy
+msgid "View on Instagram"
+msgstr "Ver en Instagram"
+
+#. module: wk_instagram_snippet
+#: model:ir.model,name:wk_instagram_snippet.model_website
+msgid "Website"
+msgstr "Sitio web"
+
+#. module: wk_instagram_snippet
+#: model_terms:ir.ui.view,arch_db:wk_instagram_snippet.instagram_feed_view_modal
+msgid "You can also join us on"
+msgstr "También puedes seguirnos en "

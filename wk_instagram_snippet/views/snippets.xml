@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+    <!-- Snippet Entry -->
+    <template id="snippets" inherit_id="website.snippets" name="Instagram Snippet">
+        <xpath expr="//div[@id='snippet_structure']" position="before">
+            <div id="instagram_snippet" class="o_panel">
+                <div class="o_panel_header">Instagram</div>
+                <div class="o_panel_body">
+                    <t t-snippet="wk_instagram_snippet.wk_s_instagram_gallery" t-thumbnail="/wk_instagram_snippet/static/src/img/s_image_gallery.png"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="instagram_gallery_option" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="instagram_gallery" data-selector=".instagram_gallery"/>
+        </xpath>
+    </template>
+</odoo>

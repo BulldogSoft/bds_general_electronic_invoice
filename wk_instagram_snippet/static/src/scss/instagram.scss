@@ -1,0 +1,132 @@
+/* Copyright (c) 2019-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) */
+/* See LICENSE file for full copyright and licensing details. */
+
+#insta_feed_view_modal{
+    transition: transform 0.3s linear;
+    .close{
+        padding: 0.5rem;
+        z-index: 10;
+        position: absolute;
+        right: 0;
+    }
+    .data_loader{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 5;
+    }
+    .modal-content {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        border:unset;
+        transform: scale(.4);
+        &>.css_editable_mode_hidden{display: none !important;}
+    }
+    &.show {
+        .modal-content {
+            transition: transform 0.3s linear;
+            transform: scale(1);
+        }
+    }
+    .modal-body{
+        min-height: 40vh;
+        overflow: hidden;
+        overflow-y: auto;
+        .insta-feed-info{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            blockquote{
+                border-color: transparent !important;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .modal-body{
+            padding: 1.75rem;
+            .info{
+                margin-top: 1rem !important;
+                &>.justify-content-center{
+                    padding-left: 1.75rem;
+                    justify-content: flex-start !important;
+                    p.text-danger{
+                        margin-bottom: 0px !important;
+                    }
+                }
+            }
+        }
+        .get-in-touch{
+            display: none;
+        }
+        #connect{
+            display: none;
+        }
+    }
+}
+
+.instagram_gallery{
+    .wk-img-box{
+        flex: 0 0 25%;
+        // max-width: 75%;
+        padding: 10px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            border: 1px solid lightgrey;
+            padding: 5px;
+            border-radius: 5px;
+            min-height: 309px;
+        }
+        .img-info{
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            transition: all .3s linear;
+            span{
+                text-decoration: none;
+                color: white;
+                font-size: 1rem;
+            }
+        }
+        &:hover{
+            img{
+                box-shadow: 0px 0px 20px lightgrey;
+            }
+            .img-info{
+                display: inline-block;
+            }
+        }
+        .wk_video_icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 5;
+            left: 15px;
+            bottom: 80%;
+            background: black;
+            opacity: .3;
+            i {
+                position: absolute;
+                top: 50%;
+                right: 10%;
+                color: white;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .wk-img-box{
+            flex: 0 0 50%;
+            max-width: 100%;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 11px;
+            white-space: nowrap;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.instagram</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <div id="shared_user_account_setting" position="after">
+                <div class="col-12 col-lg-6 o_setting_box" id="instagram_snippets_setting">
+                    <div class="o_setting_left_pane">
+                        <field name="has_instagram"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="has_instagram"/>
+                        <span class="fa fa-lg fa-globe" title="Values set here are website-specific." groups="website.group_multi_website"/>
+                        <div class="text-muted">
+                            Show your instagram feed on your website
+                        </div>
+                        <div class="content-group" attrs="{'invisible': [('has_instagram', '=', False)]}">
+                            <div class="row mt16">
+                                <label class="col-lg-3 o_light_label" string="Access Token" for="insta_access_token"/>
+                                <field name="insta_access_token" class="oe_inline" password="True" attrs="{'required': [('has_instagram', '=', True)]}"/>
+                            </div>
+<!--                            <div class="row mt16">-->
+<!--                                <label class="col-lg-3 o_light_label" string="User ID" for="insta_user_id"/>-->
+<!--                                <field name="insta_user_id" class="oe_inline"/>-->
+<!--                            </div>-->
+                            <div class="row mt16">
+                                <label class="col-lg-3 o_light_label" string="Count" for="insta_post_count"/>
+                                <field name="insta_post_count" class="oe_inline" attrs="{'required': [('has_instagram', '=', True)]}"/>
+                            </div>
+                        </div>
+                        <div attrs="{'invisible': [('has_instagram', '=', False)]}">
+                            <a href="https://developers.facebook.com/docs/instagram-basic-display-api/getting-started"
+                                    class="oe_link d-block" target="_blank">
+                                <i class="fa fa-arrow-right"/>
+                                How to configure an app in the app dashboard
+                            </a>
+                            <a href="https://developers.facebook.com/docs/instagram-basic-display-api/overview"
+                                    class="oe_link" target="_blank">
+                                <i class="fa fa-arrow-right"/>
+                                How to get my access tokens
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </field>
+    </record>
+</odoo>
